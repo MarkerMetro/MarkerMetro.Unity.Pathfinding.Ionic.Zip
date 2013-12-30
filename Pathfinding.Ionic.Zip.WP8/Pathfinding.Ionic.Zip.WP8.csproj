@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27E575BD-E147-40ED-8FC2-0D9CEE470DA2}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pathfinding.Ionic.Zip</RootNamespace>
+    <AssemblyName>Pathfinding.Ionic.Zip</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Checksums\Adler32.cs">
+      <Link>SharpZipLib\Checksums\Adler32.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Checksums\CRC32.cs">
+      <Link>SharpZipLib\Checksums\CRC32.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Checksums\IChecksum.cs">
+      <Link>SharpZipLib\Checksums\IChecksum.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Checksums\StrangeCRC.cs">
+      <Link>SharpZipLib\Checksums\StrangeCRC.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\FileSystemScanner.cs">
+      <Link>SharpZipLib\Core\FileSystemScanner.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\INameTransform.cs">
+      <Link>SharpZipLib\Core\INameTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\IScanFilter.cs">
+      <Link>SharpZipLib\Core\IScanFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\NameFilter.cs">
+      <Link>SharpZipLib\Core\NameFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\PathFilter.cs">
+      <Link>SharpZipLib\Core\PathFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\StreamUtils.cs">
+      <Link>SharpZipLib\Core\StreamUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Core\WindowsPathUtils.cs">
+      <Link>SharpZipLib\Core\WindowsPathUtils.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Encryption\PkzipClassic.cs">
+      <Link>SharpZipLib\Encryption\PkzipClassic.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\SharpZipBaseException.cs">
+      <Link>SharpZipLib\SharpZipBaseException.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Deflater.cs">
+      <Link>SharpZipLib\Zip\Compression\Deflater.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\DeflaterConstants.cs">
+      <Link>SharpZipLib\Zip\Compression\DeflaterConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\DeflaterEngine.cs">
+      <Link>SharpZipLib\Zip\Compression\DeflaterEngine.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\DeflaterHuffman.cs">
+      <Link>SharpZipLib\Zip\Compression\DeflaterHuffman.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\DeflaterPending.cs">
+      <Link>SharpZipLib\Zip\Compression\DeflaterPending.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Inflater.cs">
+      <Link>SharpZipLib\Zip\Compression\Inflater.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\InflaterDynHeader.cs">
+      <Link>SharpZipLib\Zip\Compression\InflaterDynHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs">
+      <Link>SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\PendingBuffer.cs">
+      <Link>SharpZipLib\Zip\Compression\PendingBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs">
+      <Link>SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs">
+      <Link>SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs">
+      <Link>SharpZipLib\Zip\Compression\Streams\OutputWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs">
+      <Link>SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\FastZip.cs">
+      <Link>SharpZipLib\Zip\FastZip.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\IEntryFactory.cs">
+      <Link>SharpZipLib\Zip\IEntryFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\WindowsNameTransform.cs">
+      <Link>SharpZipLib\Zip\WindowsNameTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipConstants.cs">
+      <Link>SharpZipLib\Zip\ZipConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipEntry.cs">
+      <Link>SharpZipLib\Zip\ZipEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipEntryFactory.cs">
+      <Link>SharpZipLib\Zip\ZipEntryFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipException.cs">
+      <Link>SharpZipLib\Zip\ZipException.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipExtraData.cs">
+      <Link>SharpZipLib\Zip\ZipExtraData.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipFile.cs">
+      <Link>SharpZipLib\Zip\ZipFile.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipHelperStream.cs">
+      <Link>SharpZipLib\Zip\ZipHelperStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipInputStream.cs">
+      <Link>SharpZipLib\Zip\ZipInputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipNameTransform.cs">
+      <Link>SharpZipLib\Zip\ZipNameTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipOutputStream.cs">
+      <Link>SharpZipLib\Zip\ZipOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\SharpZipLib\Zip\ZipTesting.cs">
+      <Link>SharpZipLib\Zip\ZipTesting.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\ZipEntry.cs">
+      <Link>ZipEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\ZipException.cs">
+      <Link>ZipException.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\ZipFile.cs">
+      <Link>ZipFile.cs</Link>
+    </Compile>
+    <Compile Include="..\Pathfinding.Ionic.Zip.Unity\ZipOption.cs">
+      <Link>ZipOption.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
