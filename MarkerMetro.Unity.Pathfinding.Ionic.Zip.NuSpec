@@ -13,9 +13,9 @@
     <dependencies/>
   </metadata>
   <files>
-    <file src="MarkerMetro.Unity.Pathfinding.Ionic.Zip\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\net35\"/>
-    <file src="MarkerMetro.Unity.Pathfinding.Ionic.Zip\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\"/>
-    <file src="MarkerMetro.Unity.Pathfinding.Ionic.Zip\Bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\windowsphone8\"/>
-    <file src="MarkerMetro.Unity.Pathfinding.Ionic.Zip\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\netcore45\"/>
+    <file src="Pathfinding.Ionic.Zip.Unity\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\net35\"/>
+    <file src="Pathfinding.Ionic.Zip.Unity\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\"/>
+    <file src="Pathfinding.Ionic.Zip.WP8\Bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\windowsphone8\"/>
+    <file src="Pathfinding.Ionic.Zip.Metro\bin\Release\MarkerMetro.Unity.Pathfinding.Ionic.Zip.dll" target="lib\netcore45\"/>
   </files>
 </package>
