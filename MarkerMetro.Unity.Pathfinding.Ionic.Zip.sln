@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinding.Ionic.Zip.Unity
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pathfinding.Ionic.Zip.WP8.Tests", "Pathfinding.Ionic.Zip.WP8.Tests\Pathfinding.Ionic.Zip.WP8.Tests.csproj", "{1EDD464F-F203-4D5B-83CB-38D4F37EBE49}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{401C627D-952C-43B8-87B3-19E06A17A66D}"
+	ProjectSection(SolutionItems) = preProject
+		MarkerMetro.Unity.Pathfinding.Ionic.Zip.NuSpec = MarkerMetro.Unity.Pathfinding.Ionic.Zip.NuSpec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
