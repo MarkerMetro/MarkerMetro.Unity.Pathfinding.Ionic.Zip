@@ -212,6 +212,35 @@ namespace Pathfinding.Ionic.Zip
 
             return new ZipEntry(_zipFile, entry);
 #endif
+        }        
+
+        public ZipEntry AddEntry(string entryName, MemoryStream stream)
+        {
+            if (String.IsNullOrEmpty(entryName))
+                throw new ArgumentException("entryName is null or empty.", "entryName");
+            if (stream == null)
+                throw new ArgumentException("stream is null.", "stream");
+
+            AssertIsOpen();
+
+#if NETFX_CORE
+            var entry = _zipArchive.CreateEntry(entryName);
+            var byteContent = StreamToByteArray(stream);
+            using(var byteStream = entry.Open())
+                byteStream.Write(byteContent, 0, byteContent.Length);
+
+            return new ZipEntry(entry);
+#else
+            _zipFile.Add(new ICSharpCode.SharpZipLib.Zip.StreamDataSource(stream),
+                entryName);
+
+            _zipFile.CommitUpdate();
+            _zipFile.BeginUpdate();
+
+            var entry = _zipFile.GetEntry(entryName);
+
+            return new ZipEntry(_zipFile, entry);
+#endif
         }
 
 
@@ -245,6 +274,19 @@ namespace Pathfinding.Ionic.Zip
 #else
             return _zipFile.FindEntry(name, false) >= -1;
 #endif
+        }
+
+        private static byte[] StreamToByteArray(Stream input)
+        {
+            byte[] buffer = new byte[16 * 1024];
+            using (var ms = new MemoryStream())
+            {
+                int read;
+                while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                    ms.Write(buffer, 0, read);
+                
+                return ms.ToArray();
+            }
         }
     }
 }
