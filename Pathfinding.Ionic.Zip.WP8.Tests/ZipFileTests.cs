@@ -63,6 +63,21 @@ namespace Pathfinding.Ionic.Zip.WP8.Tests
             }
         }
 
+
+        [TestMethod]
+        public async Task WP8_TestZip_Indexer_WithNonExistingFile_ShouldReturnNull()
+        {
+            using (var stream = await Package.Current.InstalledLocation.OpenStreamForReadAsync(@"Files\test.zip"))
+            {
+                using (var zip = ZipFile.Read(stream))
+                {
+                    var entry = zip["does_not_exist.json"];
+
+                    Assert.IsNull(entry);
+                }
+            }
+        }
+
         [TestMethod]
         public void WP8_EmptyZip_AddEntry_SaveAndReRead_ShouldHaveSameContent()
         {

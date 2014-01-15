@@ -220,7 +220,7 @@ namespace Pathfinding.Ionic.Zip
             get
             {
                 if (!ContainsEntry(fileName))
-                    throw new FileNotFoundException(fileName);
+                    return null;
 
 #if NETFX_CORE
                 var entry = _zipArchive.Entries.First(z => z.FullName == fileName);
@@ -243,7 +243,7 @@ namespace Pathfinding.Ionic.Zip
 #if NETFX_CORE
             return _zipArchive.Entries.Any(z => z.FullName == name);
 #else
-            return _zipFile.FindEntry(name, false) >= -1;
+            return _zipFile.FindEntry(name, false) > -1;
 #endif
         }
     }
