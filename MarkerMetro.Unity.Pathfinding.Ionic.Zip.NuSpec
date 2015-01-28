@@ -3,12 +3,12 @@
   <metadata>
     <id>MarkerMetro.Unity.Pathfinding.Ionic.Zip</id>
     <version>$version$</version>
-    <title>MarkerMetro's Unity Pathfinding port of Ionic.Zip Library</title>
-    <description>MarkerMetro's Library to help with porting Unity projects that use Pathfinding.Ionic.Zip to WinRT and Windows Phone 8</description>
+    <title>MarkerMetro.Unity.Pathfinding.Ionic.Zip</title>
+    <description>Pathfinding.Ionic.Zip Windows Store and Windows Phone Unity Plugin</description>
     <authors>MarkerMetro</authors>
     <owners>MarkerMetro</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright MarkerMetro© 2013, 2014</copyright>
+    <copyright>Copyright Marker Metro © 2015</copyright>
     <projectUrl>https://github.com/MarkerMetro/MarkerMetro.Unity.Pathfinding.Ionic.Zip</projectUrl>
     <dependencies/>
   </metadata>
